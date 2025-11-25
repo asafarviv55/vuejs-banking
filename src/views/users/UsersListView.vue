@@ -47,7 +47,7 @@ export default {
   },
   async mounted() {
     //let result = await axios.get("https://api.jokes.one/jod?category=animal");
-    let result = await axios.get("http://localhost:8080/api/users/list");
+    let result = await axios.get(`${import.meta.env.VITE_API_URL}/api/users/list`);
     console.info(result);
     this.list = result.data;
   },

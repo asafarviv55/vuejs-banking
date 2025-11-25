@@ -38,8 +38,9 @@ return {
      userData: user,
  };
   },
-  mounted() {
-    this.userData = axios.get<user>("http://localhost:8080/api/users/"+ this.$route.params['id']);
+  async mounted() {
+    const response = await axios.get<user>(`${import.meta.env.VITE_API_URL}/api/users/${this.$route.params['id']}`);
+    this.userData = response.data;
   }});
        
 </script>
