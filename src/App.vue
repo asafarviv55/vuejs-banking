@@ -12,8 +12,16 @@ import 'bootstrap/dist/css/bootstrap.min.css'
           <nav>
               <ul>
                   <li><RouterLink to="/home">Home</RouterLink></li>
+                  <li><RouterLink to="/accounts">Accounts</RouterLink></li>
+                  <li><RouterLink to="/transactions">Transactions</RouterLink></li>
+                  <li><RouterLink to="/transfers">Transfers</RouterLink></li>
+                  <li><RouterLink to="/bills">Bill Payment</RouterLink></li>
+                  <li><RouterLink to="/cards">Cards</RouterLink></li>
+                  <li><RouterLink to="/loans">Loans</RouterLink></li>
+                  <li><RouterLink to="/investments">Investments</RouterLink></li>
+                  <li><RouterLink to="/beneficiaries">Beneficiaries</RouterLink></li>
+                  <li><RouterLink to="/budgets">Budgets</RouterLink></li>
                   <li><RouterLink to="/users">Users</RouterLink></li>
-                  <li><RouterLink to="/userForm">Create User</RouterLink></li>
               </ul>
           </nav>
       </div>
